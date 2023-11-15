@@ -1,0 +1,13 @@
+.heading
+{
+    color: rgb(255,193,7);
+    text-shadow: -1px 1px 0 #000, 
+    1px 1px 0 #000, 
+   1px -1px 0 #000, 
+  -1px -1px 0 #000; 
+}
+.opt:hover
+{
+    color: rgba(126,217,252,255);
+    background-color: black;
+}

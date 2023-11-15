@@ -1,0 +1,26 @@
+.crd
+{
+    /* background-color: #013370; */
+    /* color: white; */
+    background-color: white;
+    width: 748px;
+    margin: auto;
+}
+.rad
+{
+    width: 20px;
+    height: 20px;
+}
+.que
+{
+    font-weight: 100;
+}
+.opt:hover
+{
+    color: rgba(126,217,252,255);
+    background-color: black;
+}
+textarea
+{
+    resize: none;
+}

@@ -1,0 +1,36 @@
+
+.nav-link
+{
+    color: black;
+}
+.opt:hover
+{
+    color: rgba(126,217,252,255);
+    background-color: black;
+}
+.opt1:hover
+{
+    color: rgb(97, 177, 237);
+    background-color: black;
+    cursor: pointer;
+}
+#BrandName2
+{
+    color: rgb(0, 26, 255);
+}
+.navbar-brand:hover #BrandName1
+{
+    color: rgb(0, 26, 255);
+}
+.navbar-brand:hover #BrandName2
+{
+    color: black;
+}
+.form-control
+{
+    border-color: black;
+}
+.form-control::placeholder { 
+    color: black;
+    opacity: 1;
+}

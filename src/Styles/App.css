@@ -1,8 +1,4 @@
 body{
-  background-color: rgba(126,217,252,255);
-  /* background-color: black; */
-}
-.App
-{
-  height: auto;
+  background-color: #B6D7EA;
+	font-family: 'Montserrat', sans-serif;
 }

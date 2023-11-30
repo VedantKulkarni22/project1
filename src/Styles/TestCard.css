@@ -1,8 +1,8 @@
-.card-img
+.cimg
 {
     filter: blur(0.7px);
 }
-.card-title, .card-text
+.ctxt,.ct
 {
     background-color: rgba(0, 0, 0, 0.342);
 }

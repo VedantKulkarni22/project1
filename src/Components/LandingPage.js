@@ -1,6 +1,7 @@
 import '../Styles/LandingPage.css';
 import React from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { Link } from 'react-router-dom';
 
 
 export default function LandingPage() {
@@ -15,14 +16,14 @@ export default function LandingPage() {
             <div id="Landing" className="w-75 shadow-lg bg-body mx-auto rounded-3">
                 <nav className="navbar navbar-expand-lg navbar-light rounded-3">
                     <div className="container-fluid">
-                        <a className="navbar-brand fw-bold fs-2" href="/"><span className='BrandName1'>Cogni</span><span className="BrandName2">Test🧠</span></a>
+                        <Link className="navbar-brand fw-bold fs-2" to="/"><span className='BrandName1'>Cogni</span><span className="BrandName2">Test🧠</span></Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <a className="opt nav-link fs-6 rounded-3 m-1" aria-current="page" href="/">Home</a>
+                                    <Link className="opt nav-link fs-6 rounded-3 m-1" aria-current="page" to="/">Home</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a className="opt nav-link fs-6 rounded-3 m-1" href="#howitworks">How it works?</a>
@@ -33,10 +34,14 @@ export default function LandingPage() {
                             </ul>
                             <ul className="navbar-nav ms-auto mb-lg-0">
                                 <li className="nav-item">
-                                    <button type="button" className="opt btn btn-outline-dark m-2" href="/">SignUp</button>
+                                    <Link to="/signuplogin">
+                                        <button type="button" className="opt btn btn-outline-dark m-2">SignUp</button>
+                                    </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <button type="button" className="opt btn btn-outline-dark m-2" href="/">Login</button>
+                                    <Link to="/signuplogin">
+                                        <button type="button" className="opt btn btn-outline-dark m-2">Login</button>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -50,8 +55,10 @@ export default function LandingPage() {
                         <p className="card-text fs-5">Are you facing some mental health issues???</p>
                         <p className="card-text fs-5"><span className='Multitext rounded-3'>{multitext}</span><Cursor cursorStyle="🧠" cursorBlinking={false} /></p>
                         <div>
-                            <button type="button" className="opt btn btn-outline-dark" href="/">SignUp</button>
-                            <button type="button" className="opt btn btn-outline-dark m-2" href="/">Login</button>
+                            <Link to="/signuplogin">
+                                <button type="button" className="opt btn btn-outline-dark">SignUp</button>
+                                <button type="button" className="opt btn btn-outline-dark m-2">Login</button>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-md-7">
@@ -59,12 +66,9 @@ export default function LandingPage() {
                             <img src="Images/landingpage.png" className="brainimg rounded-3" alt="Brain and other cognitive components which depicts test and treating brian" height="450px" width="700px" />
                         </div>
                     </div>
-                    {/* <svg className='wave position-absolute' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                        <path fill="#b8d9ec" fill-opacity="1" d="M0,128L60,149.3C120,171,240,213,360,240C480,267,600,277,720,261.3C840,245,960,203,1080,192C1200,181,1320,203,1380,213.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-                    </svg> */}
                 </div>
                 <h4 className='howtext d-flex justify-content-center fw-bolder' id="howitworks">How it works?</h4>
-                <div className='d-flex flex-row justify-content-around p-3'>
+                <div className='d-flex flex-row justify-content-around p-3 mb-3'>
                     <div className="how shadow-lg card mt-3" style={{ width: "16rem" }}>
                         <img src="Images/tests.png" className="card-img-top" alt="..." height="238px" width="238px" />
                         <div className="card-body">

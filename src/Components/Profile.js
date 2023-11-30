@@ -1,9 +1,13 @@
 import React from 'react';
+import Navbar from './Navbar'
 import '../Styles/Profile.css';
+import { Link } from 'react-router-dom';
+
 
 export default function Profile() {
     return (
         <div>
+            <Navbar/>
             <div className="container">
                 <div className="main-body p-4">
                     <div className="row gutters-sm">
@@ -14,8 +18,10 @@ export default function Profile() {
                                         <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" className="rounded-circle" width="150" />
                                         <div className="mt-3">
                                             <h4>John Doe</h4>
-                                            <button className="opt btn btn-outline-dark m-1">Follow</button>
-                                            <button className="opt btn btn-outline-dark m-1">Message</button>
+                                            <Link to="/comingsoon">
+                                            <button className="optprofile btn btn-outline-dark m-1">Follow</button>
+                                            <button className="optprofile btn btn-outline-dark m-1">Message</button>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -23,21 +29,21 @@ export default function Profile() {
                             <div className="card mt-3">
                                 <div className="card h-100">
                                     <div className="card-body shadow-lg">
-                                        <h6 className="d-flex align-items-center mb-3">Recent Tests</h6>
+                                        <h6 className="d-flex align-items-center mb-3 fw-bold fs-5">Recent Tests</h6>
                                         <p>Depression Test<br></br>
-                                            <a href="/"><small>See more...</small></a>
+                                            <Link to="/comingsoon" className='a'><small>See more...</small></Link>
                                         </p>
                                         <p>Hallucination Test<br></br>
-                                            <a href="/"><small>See more...</small></a>
+                                            <Link to="/comingsoon" className='a'><small>See more...</small></Link>
                                         </p>
                                         <p>Delusion Test<br></br>
-                                            <a href="/"><small>See more...</small></a>
+                                            <Link to="/comingsoon" className='a'><small>See more...</small></Link>
                                         </p>
                                         <p>Anxiety Test<br></br>
-                                            <a href="/"><small>See more...</small></a>
+                                            <Link to="/comingsoon" className='a'><small>See more...</small></Link>
                                         </p>
                                         <p>Stability Test<br></br>
-                                            <a href="/"><small>See more...</small></a>
+                                            <Link to="/comingsoon" className='a'><small>See more...</small></Link>
                                         </p>
                                     </div>
                                 </div>
@@ -84,7 +90,7 @@ export default function Profile() {
                                     <hr />
                                     <div className="row">
                                         <div className="col-sm-12">
-                                            <a className="opt btn btn-outline-dark" target="__blank" href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
+                                            <Link className="a optprofile btn btn-outline-dark" target="__blank" to="/comingsoon">Edit</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -94,7 +100,7 @@ export default function Profile() {
                                 <div className="col-sm-6 mb-3">
                                     <div className="card h-100">
                                         <div className="card-body shadow-lg">
-                                            <h6 className="d-flex align-items-center mb-3">Ongoing Treatments</h6>
+                                            <h6 className="d-flex align-items-center mb-3 fw-bold fs-5">Ongoing Treatments</h6>
                                             {/* <p>Web Design</p>
                                                 <p>Website Markup</p>
                                                 <p>One Page</p>                                               
@@ -107,7 +113,7 @@ export default function Profile() {
                                 <div className="col-sm-6 mb-3">
                                     <div className="card h-100">
                                         <div className="card-body shadow-lg">
-                                            <h6 className="d-flex align-items-center mb-3">Recent Treatments</h6>
+                                            <h6 className="d-flex align-items-center mb-3 fw-bold fs-5">Recent Treatments</h6>
                                             {/* <p>Web Design</p>
                                                 <p>Website Markup</p>
                                                 <p>One Page</p>

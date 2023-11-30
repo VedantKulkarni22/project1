@@ -1,4 +1,4 @@
-.crd
+.crdtest
 {
     /* background-color: #013370; */
     /* color: white; */
@@ -17,7 +17,7 @@
 }
 .opt:hover
 {
-    color: rgba(126,217,252,255);
+    color: rgb(182,215,234);
     background-color: black;
 }
 textarea
